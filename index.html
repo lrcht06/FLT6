@@ -17,33 +17,67 @@
 
   <div class="container">
     <h1 class="clickable">Finals Lab Task 6: MongoDB Practice</h1>
-    <p>This portfolio demonstrates the application of MySQL SELECT Clauses to query and retrieve data from a relational database. The task builds upon a predefined database structure and focuses on extracting meaningful insights using various SELECT statement features.</p>
+    <p>This portfolio demonstrates the use of <b>MongoDB</b> for document-oriented database operations using the Mongo shell. The task is divided into several parts: creating a database, inserting documents into collections, querying and updating those documents, and working with relationships across multiple collections.</p>
 
     <hr />
 
     <h2 class="clickable">STEP BY STEP PROCESS</h2>
     <h3>STEP 1</h3>
-    <p>Launch MySQL Workbench or phpMyAdmin and start XAMPP to activate MySQL.</p>
+    <p>Open terminal and connect to MongoDB instance.</p>
 
     <h3>STEP 2</h3>
-    <p>Open MySQL Workbench or phpMyAdmin and download/import the onlineCourse.sql file to initialize the tables and data.</p>
+    <p>Create and use a database named <code>mongo_practice</code>.</p>
 
     <h3>STEP 3</h3>
+    <p>Insert the following documents into a <code>movies</code> collection using <code>db.movies.insert()</code>.</p>
     <ul>
-      <li>Create a database named <code>online_courseDB</code></li>
-      <li>Use the database created</li>
+      <li>Each document includes attributes such as <code>title</code>, <code>writer</code>, <code>year</code>, <code>actors</code>, and optionally <code>franchise</code> or <code>synopsis</code>.</li>
+      <li>Insert a variety of documents including: Fight Club, Pulp Fiction, Inglorious Basterds, The Hobbit series, Pee Wee Herman's Big Adventure, and Avatar.</li>
     </ul>
 
     <h3>STEP 4</h3>
-    <p>Import the provided initial SQL structure (onlineCourse.sql) into the online_courseDB to load the necessary tables and sample data.</p>
-
-    <h3>STEP 5</h3>
+    <p>Perform queries to retrieve documents from the <code>movies</code> collection.</p>
     <ul>
-      <li><strong>Task 1</strong> – Retrieve all courses where <code>students enrolled</code> is less than the <code>enrollment limit</code></li>
-      <li><strong>Task 2</strong> – Group courses by <code>category</code> and calculate total students</li>
-      <li><strong>Task 3</strong> – Retrieve courses that are fully enrolled</li>
-      <li><strong>Task 4</strong> – Calculate total number of students enrolled across all courses</li>
-      <li><strong>Task 5</strong> – Sort courses by <code>students enrolled</code> in ascending order</li>
+      <li>Retrieve all documents.</li>
+      <li>Retrieve documents where the writer is "Quentin Tarantino".</li>
+      <li>Find documents with actors that include "Brad Pitt".</li>
+      <li>Retrieve all documents from the Hobbit franchise.</li>
+      <li>Query movies released in the 1990s or outside the 2000–2010 range.</li>
+    </ul>
+    
+    <h3>STEP 5</h3>
+    <p>Update existing documents in the <code>movies</code> collection.</p>
+    <ul>
+      <li>Add missing <code>synopsis</code> fields.</li>
+      <li>Add a new actor to a movie.</li>
+    </ul>
+
+    <h3>STEP 6</h3>
+    <p>Search text within the <code>synopsis</code> fields.</p>
+    <ul>
+      <li>Use regular expressions to find documents with specific words or word combinations.</li>
+    </ul>
+
+    <h3>STEP 7</h3>
+    <p>Delete specific movie documents.</p>
+    <ul>
+      <li>Delete the movies "Pee Wee Herman's Big Adventure" and "Avatar".</li>
+    </ul>
+
+    <h3>STEP 8</h3>
+    <p>Manage related data using collections <code>users</code>, <code>posts</code>, and <code>comments</code>.</p>
+    <ul>
+      <li>Insert user profiles with nested documents.</li>
+      <li>Insert multiple blog posts assigned to users.</li>
+      <li>Insert related comments using the <code>post</code> ObjectId.</li>
+    </ul>
+
+    <h3>STEP 9</h3>
+    <p>Perform relationship-based queries.</p>
+    <ul>
+      <li>Query all users, posts, and comments.</li>
+      <li>Filter posts and comments by author.</li>
+      <li>Find all comments tied to a specific post.</li>
     </ul>
 
     <hr />
