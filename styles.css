@@ -48,13 +48,13 @@ h3 {
 }
 
 h4 {
-  color: #d1agff;
+  color: #d1afff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-left: 1px solid #cab7ff;
+  border-left: 1px solid #caa7ff;
   background-color: rgba(255, 255, 255, 0.04);
-  padding: 0.5rem 1rem;
+  padding: 0rem 0rem;
   border-radius: 0px;
-  margin: 1rem auto 0.5rem auto;
+  margin: 0rem auto 0rem auto;
   width: fit-content;
   font-style: italic;
 }
