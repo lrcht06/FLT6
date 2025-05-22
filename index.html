@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finals Lab Task 6</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="twinkling"></div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/ITbgmusic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1 class="clickable">Finals Lab Task 6: MongoDB Practice</h1>
+    <p>This portfolio demonstrates the application of MySQL SELECT Clauses to query and retrieve data from a relational database. The task builds upon a predefined database structure and focuses on extracting meaningful insights using various SELECT statement features.</p>
+
+    <hr />
+
+    <h2 class="clickable">STEP BY STEP PROCESS</h2>
+    <h3>STEP 1</h3>
+    <p>Launch MySQL Workbench or phpMyAdmin and start XAMPP to activate MySQL.</p>
+
+    <h3>STEP 2</h3>
+    <p>Open MySQL Workbench or phpMyAdmin and download/import the onlineCourse.sql file to initialize the tables and data.</p>
+
+    <h3>STEP 3</h3>
+    <ul>
+      <li>Create a database named <code>online_courseDB</code></li>
+      <li>Use the database created</li>
+    </ul>
+
+    <h3>STEP 4</h3>
+    <p>Import the provided initial SQL structure (onlineCourse.sql) into the online_courseDB to load the necessary tables and sample data.</p>
+
+    <h3>STEP 5</h3>
+    <ul>
+      <li><strong>Task 1</strong> – Retrieve all courses where <code>students enrolled</code> is less than the <code>enrollment limit</code></li>
+      <li><strong>Task 2</strong> – Group courses by <code>category</code> and calculate total students</li>
+      <li><strong>Task 3</strong> – Retrieve courses that are fully enrolled</li>
+      <li><strong>Task 4</strong> – Calculate total number of students enrolled across all courses</li>
+      <li><strong>Task 5</strong> – Sort courses by <code>students enrolled</code> in ascending order</li>
+    </ul>
+
+    <hr />
+
+    <h2 class="clickable">Creation of Database</h2>
+    <div class="image-column">
+      <h3>Create Database</h3>
+      <img src="images/FLT6(CD).png" alt="Create Database" />
+    </div>
+
+    <hr />
+
+    <h2 class="clickable">Insertion of Documents</h2>
+    <div class="image-column">
+      <h3>Insert Documents</h3>
+      <img src="images/FLT6(ID).png" alt="Insert Documents" />
+    </div>
+
+    <hr />
+
+    <h2 class="clickable">Querying of Documents</h2>
+    <div class="image-column">
+      <h3>Query 1: All Documents</h3>
+      <h4>all documents</h4>
+      <img src="images/FLT6(QD1).png" alt="All Documents" />
+      <h3>Query 2: By Writer</h3>
+      <h4>`writer` set to &quot;Quentin Tarantino&quot;</h4>
+      <img src="images/FLT6(QD2).png" alt="By Writer" />
+      <h3>Query 3: By Actor</h3>
+      <h4>`actors` include &quot;Brad Pitt&quot;</h4>
+      <img src="images/FLT6(QD3).png" alt="By Actor" />
+      <h3>Query 4: By Franchise</h3>
+      <h4>`franchise` set to &quot;The Hobbit&quot;</h4>
+      <img src="images/FLT6(QD4).png" alt="By Franchise" />
+      <h3>Query 5: Movies in 90s</h3>
+      <h4>all movies released in the 90s</h4>
+      <img src="images/FLT6(QD5).png" alt="Movies in 90s" />
+      <h3>Query 6: Movies before 2000 and after 2010</h3>
+      <h4>all movies released before the year 2000 or after 2010</h4>
+      <img src="images/FLT6(QD6).png" alt="Movies before 2000 and after 2010" />
+    </div>
+
+     <hr />
+
+    <h2 class="clickable">Updating of Documents</h2>
+    <div class="image-column">
+      <h3>Update 1</h3>
+      <img src="images/FLT6(UD1).png" alt="Update 1" />
+      <h3>Update 2</h3>
+      <img src="images/FLT6(UD2).png" alt="Update 2" />
+      <h3>Update 3</h3>
+      <img src="images/FLT6(UD3).png" alt="Update 3" />
+    </div>
+
+     <hr />
+
+    <h2 class="clickable">Text Searching of Documents</h2>
+    <div class="image-column">
+      <h3>Text Search 1</h3>
+      <h4>"Bilbo"</h4> 
+      <img src="images/FLT6(TS1).png" alt="Text Search 1" />
+      <h3>Text Search 2</h3>
+      <h4>"Gandalf"</h4> 
+      <img src="images/FLT6(TS2).png" alt="Text Search 2" />
+      <h3>Text Search 3</h3>
+      <h4>"Bilbo" and not "Gandalf"</h4> 
+      <img src="images/FLT6(TS3).png" alt="Text Search 3" />
+      <h3>Text Search 4</h3>
+      <h4>"dwarves" or "hobbit"</h4> 
+      <img src="images/FLT6(TS4).png" alt="Text Search 4" />
+      <h3>Text Search 5</h3>
+      <h4>"gold" or "dragon"</h4> 
+      <img src="images/FLT6(TS5).png" alt="Text Search 5" />
+    </div>
+
+    <hr />
+
+    <h2 class="clickable">Deletion of Documents</h2>
+    <div class="image-column">
+      <h3>Delete 1</h3>
+      <h4>"Pee Wee Herman's Big Adventure</h4> 
+      <img src="images/FLT6(DD1).png" alt="Delete 1" />
+      <h3>Delete 2</h3>
+      <h4>"Avatar"</h4> 
+      <img src="images/FLT6(DD2).png" alt="Delete 2" />
+    </div>
+
+    <hr />
+
+    <h2 class="clickable">Establishing of Relationships</h2>
+    <div class="image-column">
+      <h3>Relationship 1: Users</h3>
+      <h4>User 1: GoodGuyGreg</h4> 
+      <img src="images/FLT6(ER1U1).png" alt="Relationship 1: Users" />
+      <h4>User 2: ScumbagSteve</h4> 
+      <img src="images/FLT6(ER1U2).png" alt="Delete 1" />
+      <h3>Relationship 2: Posts</h3>
+      <h4>Post 1: Passes out at a party</h4> 
+      <img src="images/FLT6(ER1P1).png" alt="Relationship 2: Posts" />
+      <h4>Post 2: Steals your identity</h4> 
+      <img src="images/FLT6(ER1P2).png" alt="Relationship 2: Posts" />
+      <h4>Post 3: Reports a bug in your code</h4> 
+      <img src="images/FLT6(ER1P3).png" alt="Relationship 2: Posts" />
+      <h4>Post 4: Borrows something</h4> 
+      <img src="images/FLT6(ER1P4).png" alt="Relationship 2: Posts" />
+      <h4>Post 5: Borrows everything</h4> 
+      <img src="images/FLT6(ER1P5).png" alt="Relationship 2: Posts" />
+      <h4>Post 6: Forks your repo on github</h4> 
+      <img src="images/FLT6(ER1P6).png" alt="Relationship 2: Posts" />
+      <h3>Relationship 3: Comments</h3>
+      <h4>Comment 1: Hope you got a good deal!</h4> 
+      <img src="images/FLT6(ER1C1).png" alt=">Relationship 3: Comments" />
+      <h4>Comment 2: What's mine is yours!</h4> 
+      <img src="images/FLT6(ER1C2).png" alt=">Relationship 3: Comments" />
+      <h4>Comment 3: Don't violate the licensing agreement!</h4> 
+      <img src="images/FLT6(ER1C3).png" alt=">Relationship 3: Comments" />
+      <h4>Comment 4: It still isn't clean</h4> 
+      <img src="images/FLT6(ER1C4).png" alt=">Relationship 3: Comments" />
+      <h4>Comment 5: Denied your PR cause I found a hack</h4> 
+      <img src="images/FLT6(ER1C5).png" alt=">Relationship 3: Comments" />
+    </div>
+
+    <hr />
+
+    <h2 class="clickable">Querying of Related Collections</h2>
+    <div class="image-column">
+      <h3>Query 1: All Users</h3>
+      <h4>all users</h4>
+      <img src="images/FLT6(QRC1).png" alt="Query 1: All Users" />
+      <h3>Query 2: All Posts</h3>
+      <h4>all posts</h4>
+      <img src="images/FLT6(QRC2).png" alt="Query 2: All Posts" />
+      <h3>Query 3: GoodGuyGreg's Posts</h3>
+      <h4>all posts that was authored by "GoodGuyGreg"</h4>
+      <img src="images/FLT6(QRC3).png" alt="Query 3: GoodGuyGreg's Posts" />
+      <h3>Query 4: ScumbagSteve's Posts</h3>
+      <h4>all posts that was authored by "ScumbagSteve"</h4>
+      <img src="images/FLT6(QRC4).png" alt="Query 4: ScumbagSteve's Posts" />
+      <h3>Query 5: All Comments</h3>
+      <h4>all comments</h4>
+      <img src="images/FLT6(QRC5).png" alt="Query 5: All Comments" />
+      <h3>Query 6: GoodGuyGreg's Comments</h3>
+      <h4>all comments that was authored by "GoodGuyGreg"</h4>
+      <img src="images/FLT6(QRC6).png" alt="Query 6: GoodGuyGreg's Comments" />
+      <h3>Query 7: ScumbagSteve's Comments</h3>
+      <h4>all comments that was authored by "ScumbagSteve"</h4>
+      <img src="images/FLT6(QRC7).png" alt="Query 7: ScumbagSteve's Comments" />
+      <h3>Query 8: Comments Under "Reports a bug in your code" Post</h3>
+      <h4>all comments belonging to the post "Reports a bug in your code"</h4>
+      <img src="images/FLT6(QRC8).png" alt="Query 8: Comments Under "Reports a bug in your code" Post" />
+    </div>
+
+
+    <h2 class="clickable">JSON Copy (File)</h2>
+    <p>
+      <a class="file-link" href="files/L.E.%20Turla%20(FLT6_Code).sql" download>
+        📂 L.E.Turla (Finals Lab Task 6 Code)
+      </a>
+    </p>
+
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const trail = document.createElement("div");
+      trail.className = "cursor-trail";
+      trail.style.left = `${e.pageX}px`;
+      trail.style.top = `${e.pageY}px`;
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 1000);
+    });
+
+    document.querySelectorAll(".clickable").forEach(el => {
+      el.addEventListener("click", () => {
+        el.classList.add("clicked");
+        setTimeout(() => el.classList.remove("clicked"), 300);
+      });
+    });
+  </script>
+</body>
+</html>
